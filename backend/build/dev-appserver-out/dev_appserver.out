@@ -1,32 +1,23 @@
-May 26, 2019 12:43:57 AM java.util.prefs.WindowsPreferences <init>
+May 26, 2019 4:30:39 AM java.util.prefs.WindowsPreferences <init>
 WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-May 26, 2019 12:43:57 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+May 26, 2019 4:30:39 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\mohak\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\mohak\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-2019-05-26 00:43:58.035:INFO::main: Logging initialized @580ms to org.eclipse.jetty.util.log.StdErrLog
-2019-05-26 00:43:58.080:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
-java.io.IOException: Failed to bind to localhost/127.0.0.1:8080
-	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:346)
-	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:308)
-	at com.google.appengine.tools.development.jetty9.JettyContainerService.connectContainer(JettyContainerService.java:309)
-	at com.google.appengine.tools.development.AbstractContainerService.createConnection(AbstractContainerService.java:268)
-	at com.google.appengine.tools.development.AbstractInstanceHolder.createConnection(AbstractInstanceHolder.java:37)
-	at com.google.appengine.tools.development.AbstractModule.createConnection(AbstractModule.java:73)
-	at com.google.appengine.tools.development.Modules.createConnections(Modules.java:99)
-	at com.google.appengine.tools.development.DevAppServerImpl.doStart(DevAppServerImpl.java:245)
-	at com.google.appengine.tools.development.DevAppServerImpl.access$000(DevAppServerImpl.java:47)
-	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:223)
-	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:221)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at com.google.appengine.tools.development.DevAppServerImpl.start(DevAppServerImpl.java:221)
-	at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:404)
-	at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:45)
-	at com.google.appengine.tools.development.DevAppServerMain.run(DevAppServerMain.java:257)
-	at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:248)
-Caused by: java.net.BindException: Address already in use: bind
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:433)
-	at sun.nio.ch.Net.bind(Net.java:425)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:342)
-	... 16 more
+2019-05-26 04:30:39.826:INFO::main: Logging initialized @721ms to org.eclipse.jetty.util.log.StdErrLog
+2019-05-26 04:30:39.890:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+May 26, 2019 1:30:40 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\mohak\FinalProject\backend) is not equal to your 
+web application root (C:\Users\mohak\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2019-05-26 04:30:40.182:INFO:oejs.Server:main: jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_152-release-1343-b01
+2019-05-26 04:30:40.765:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@3f4faf53{/,file:///C:/Users/mohak/FinalProject/backend/build/exploded-backend/,AVAILABLE}{C:\Users\mohak\FinalProject\backend\build\exploded-backend}
+2019-05-26 04:30:40.766:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-05-26 04:30:40.766:INFO:oejs.session:main: node0 Scavenging disabled
+2019-05-26 04:30:40.791:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@5b799640{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-05-26 04:30:40.792:INFO:oejs.Server:main: Started @1687ms
+May 26, 2019 1:30:40 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+May 26, 2019 1:30:40 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+May 26, 2019 4:30:40 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running

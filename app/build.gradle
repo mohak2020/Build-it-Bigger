@@ -94,7 +94,7 @@ dependencies {
     //Android Library
     implementation project (":mylibrary")
 
-    implementation project (":backend")
+    //implementation project (":backend")
 
     //espresso test
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
